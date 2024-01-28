@@ -1,14 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tea House</title>
+  <!-- Daisy UI CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icon -->
+  <script src="https://kit.fontawesome.com/b64615e465.js" crossorigin="anonymous"></script>
+  <!-- Castom Color Purpose Script By Taliwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Manrope Font */
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
 </head>
 
-<body>
-  <h1>Hello World!!!</h1>
+<body class="font-manrope">
+  <header class="container mx-auto mt-24">
+    <div class="hero">
+      <div class="hero-content flex-col lg:flex-row gap-x-24">
+
+        <div class="">
+          <h1 class="text-7xl font-extrabold text-[#1c1c1c]">It's good <br>
+            tea time at The <br> Tea House</h1>
+          <p class="py-6 text-lg text-[#777] font-medium">Provident Tea and Botanical Solutions Supplier Give Optimum
+            <br>
+            Satisfaction To Your Taste Buds.
+          </p>
+          <button class="btn btn-error font-bold text-xl text-[#fff] p-2">Explore More <img class="w-5 h-5"
+              src="images/arrow.png" alt=""></button>
+        </div>
+        <!-- Rating Badge -->
+        <div><img src="images/banner.png" class="max-w-sm" />
+          <div class="flex items-center gap-2 drop-shadow-xl p-5 bg-[#fff] w-[240px] relative bottom-16">
+            <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+            <div>
+              <h3 class="text-3xl text-[#1c1c1c] font-extrabold">5.00</h3>
+              <p class="text-[#777] font-semibold">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="mt-24 container mx-auto">
+      <div class="text-center space-y-5">
+        <h1 class="text-5xl font-extrabold text-[#1c1c1c]">Our Featured Products</h1>
+        <p class="font-medium text-[#777]">There are many variations of passages of Lorem Ipsum available, but the
+          majority have suffered alteration
+          in some form, <br>
+          by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+      <!-- The card section -->
+      <!-- Main DIV -->
+      <div class="mb-24 mt-14 flex justify-center gap-x-6">
+        <!-- First card -->
+        <div class="card w-[267px] h-[391px] bg-slate-50 pt-7 shadow-xl">
+          <figure><img src="images/tea-1.png" alt="Shoes" />
+          </figure>
+          <div class="card-body  text-center">
+            <h2 class="text-2xl font-extrabold text-[#1c1c1c]">Milk Tea</h2>
+            <p class="text-bold text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!--Second card -->
+        <div class="card w-[267px] h-[391px] bg-slate-50 pt-7 shadow-xl">
+          <figure><img src="images/tea-2.png" alt="Shoes" />
+          </figure>
+          <div class="card-body  text-center">
+            <h2 class="text-2xl font-extrabold text-[#1c1c1c]">Black Tea</h2>
+            <p class="text-bold text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- Third card -->
+        <div class="card w-[267px] h-[391px] bg-slate-50 pt-7 shadow-xl">
+          <figure><img src="images/tea-3.png" alt="Shoes" />
+          </figure>
+          <div class="card-body  text-center">
+            <h2 class="text-2xl font-extrabold text-[#1c1c1c]">Lemon Tea</h2>
+            <p class="text-bold text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- Fourth card -->
+        <div class="card w-[267px] h-[391px] bg-slate-50 pt-7 shadow-xl">
+          <figure><img src="images/tea-4.png" alt="Shoes" />
+          </figure>
+          <div class="card-body  text-center">
+            <h2 class="text-2xl font-extrabold text-[#1c1c1c]">Green Tea</h2>
+            <p class="text-bold text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Great tea freshly presented -->
+    <section class="my-24 flex ">
+      <!-- Main DIV -->
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+        <!-- First GRID -->
+        <div>
+
+        </div>
+        <!-- Second GRID -->
+        <div>
+          <img class="row-span-2" src="images/fresh-1.png" alt="">
+        </div>
+        <!-- Third Grid -->
+        <div>
+          <img class="row-span-2" src="images/fresh-2.png" alt="">
+        </div>
+        <!-- Fourt GRID -->
+        <div>
+
+        </div>
+      </div>
+      <div>
+        <h1 class="text-5xl font-extrabold text-[#1c1c1c] mb-5">Great Tea, Freshly Presented</h1>
+        <p class="font-medium text-[#777] mb-7">The meaning of gong cha is chanese is to provide the best tea to
+          emperor<br>
+          from
+          all possessions . It represents
+          the
+          highest quality and self expectation. <br> Establishing in 2006, Gong cha had been deeply appreciated by its
+          custoers <br> because
+          of good words of mouth and unique customized service orginated br from Taiwan.</p>
+        <h5 class="text-xl font-extrabold text-[#1c1c1c]">Unique Taste</h5>
+        <p class="font-medium text-[#777] mb-5">A Unique and different style from other teapots gives a luxurious and
+          minimalist impression</p>
+        <h5 class="text-xl font-extrabold text-[#1c1c1c]">Premium Quality</h5>
+        <p class="font-medium text-[#777]">Premium Quality that makes tea more elegant and more durable when you use it.
+        </p>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
